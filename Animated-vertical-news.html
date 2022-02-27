@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS | Animated Vertical Carousel</title>
+    <style>
+        body {
+            background-color:#339;
+        }
+        .news-carousel {
+            font-family: Arial;
+            width: 650px;
+            height: 270px;
+            overflow: hidden;
+            margin: 70px auto;
+        }
+        .news-carousel .slide {
+            background-color: rgb(196, 62, 236);
+            /* border: 1px solid red; */
+            padding: 10px;
+        }
+        .news-carousel .slide:hover {
+           background-color: rgb(191, 245, 82);
+        }
+        .news-carousel .slide>img {
+            width: 200px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+         .news-carousel .slide>img:hover {
+             width: 205px;
+         }
+        .news-carousel .slide .caption {
+            display: inline-block;
+            width: 400px;
+            vertical-align: top;
+        }
+        .news-carousel .slide .caption:hover {
+            font-family: georgia;
+        }
+        .news-carousel .slide h2 {
+            margin-top: 0;
+        }
+        .news-carousel .slide p {
+            text-align: justify;
+
+        }
+        .news-carousel .slide a{
+            text-decoration: none;
+            float: right;
+        }
+        .news-carousel .slide a>img:hover {
+            width: 32px;
+            background-color: rgb(192, 192, 192);
+        }
+        .news-carousel .film {
+            animation: rotate 15s infinite linear;
+        }
+        @keyframes rotate {
+            0% {transform: translateY(0);}
+            30%{transform: translateY(0);}
+            33%{transform: translateY(-277px);}
+            63%{transform: translateY(-277px);}
+            66%{transform: translateY(-555px);}
+            96%{transform: translateY(-555px);}
+            100%{transform: translateY(0px);}
+        }
+    </style>
+</head>
+<body>
+    <section class="news-carousel">
+        <div class="film">
+        <article class="slide">
+            <img src="https://i.picsum.photos/id/603/400/500.jpg?hmac=njnaAFZVi6AWTlHzKVQ3fOtsPb7btz16AUD_cQqxRY0" alt="First news title">
+            <div class="caption">
+                <h2>First news title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, aperiam dolores non assumenda a magnam maxime explicabo repellendus nisi ad quas beatae enim id doloribus fuga doloremque. Exercitationem, doloremque repellendus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, aperiam dolores non assumenda a magnam maxime explicabo repellendus nisi ad quas beat.</p>
+                <a href="">
+                <img src="https://icons.iconarchive.com/icons/saki/nuoveXT-2/24/Actions-format-indent-more-icon.png" alt="">
+            ...</a>
+            </div>
+        </article>
+        <article class="slide">
+            <img src="https://i.picsum.photos/id/38/400/500.jpg?hmac=a3ixUMaZG_-jYbBgA1q3TCgJfeNvOAH52eC9TlolXvU" alt="Second news title">
+            <div class="caption">
+                <h2>Second news title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, aperiam dolores non assumenda a magnam maxime explicabo repellendus nisi ad quas beatae enim id doloribus fuga doloremque. Exercitationem, doloremque repellendus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, aperiam dolores non assumenda a magnam maxime explicabo repellendus nisi ad quas beat.</p>
+                <a href="">
+                <img src="https://icons.iconarchive.com/icons/saki/nuoveXT-2/24/Actions-format-indent-more-icon.png" alt="">
+            ...</a>
+            </div>
+        </article>
+        <article class="slide">
+            <img src="https://i.picsum.photos/id/1059/400/500.jpg?hmac=f-5jii59rdD9EZuS-MUupPDA7_ofT10dGYbzlR4xyh8" alt="Third news title">
+            <div class="caption">
+                <h2>Third news title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, aperiam dolores non assumenda a magnam maxime explicabo repellendus nisi ad quas beatae enim id doloribus fuga doloremque. Exercitationem, doloremque repellendus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, aperiam dolores non assumenda a magnam maxime explicabo repellendus nisi ad quas beat.</p>
+                <a href="">
+                <img src="https://icons.iconarchive.com/icons/saki/nuoveXT-2/24/Actions-format-indent-more-icon.png" alt="">
+            ...</a>
+            </div>
+        </article>
+        </div>
+    </section>
+    
+</body>
+</html>
